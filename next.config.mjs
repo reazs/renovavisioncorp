@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  basePath: '/renovavisioncorp',
+  assetPrefix: '/renovavisioncorp',
   images: {
     remotePatterns: [
       {
@@ -8,6 +12,7 @@ const nextConfig = {
         pathname: "/**",
       },
     ],
+    unoptimized: true,
   },
 };
 
